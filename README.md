@@ -25,7 +25,7 @@ Deve-se criar um app mobile, utilizando a tecnologia React Native, **DO ZERO**, 
 
 ---
 
-# RustApp
+# LanchesApp
 
 Para o projeto avaliativo decidi desenvolver um app de comida que eu encontrei um template na internet. Estou tentando receiar esse App o mais fielmente possível, no entanto os alimentos representados de maneira 3D nas imagens de temaplate só podem ser obtidos de maneira paga então tive que arrumar alguns grates por aí.
 
