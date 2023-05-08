@@ -127,7 +127,72 @@ export const home = StyleSheet.create({
         width: width,
         height: height,
         backgroundColor: "#fff",
-    }
+    },
+    header: {
+        position: "absolute",
+        top: 0,
+        width: width,
+        height: 50,
+        padding: 5,
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "space-between",
+        alignItems: "center",
+    },
+    avatar: {
+        width: 35,
+        height: 35,
+        resizeMode: "cover",
+        backgroundColor: "#918AE3",
+        borderRadius: 100,
+        borderWidth: 3,
+        borderColor: "#5D55B2",
+        borderStyle: "solid",
+    },    
+    content: {
+        position: "absolute",
+        top: 50,        
+        width: width,
+        height: height,
+    },
+    topContent: {
+        position: "relative",
+        width: "100%",
+        height: 150,
+        padding: 10,
+    },    
+    title: {
+        fontSize: 20,
+        fontWeight: 500,
+        marginBottom: 10,
+        color: "#000",  
+    },
+    topCardContent: {
+        display: "flex",
+        flexDirection: "row",
+        position: "relative",
+        padding: 10,
+        width: "100%",
+        height: "100%",
+        borderRadius: 15,
+        backgroundColor: "#C0A9E5",
+        justifyContent: "space-between",
+    },
+    subtitle: {
+        fontSize: 10,
+        color: "#fee",
+    },
+    topFoodTitle: {
+        fontSize: 15,
+        fontWeight: 500,
+        color: "#fff",
+    },
+    food: {
+        width: 150,
+        height: "auto",
+        bottom: 15,
+        resizeMode: "cover",
+    },
 });
 
 export const utils = StyleSheet.create({
