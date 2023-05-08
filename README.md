@@ -16,12 +16,21 @@ Deve-se criar um app mobile, utilizando a tecnologia React Native, **DO ZERO**, 
 - [x] Imagem
 - [x] Texto **(bem estilizado)**
 - [x] Botão **(com a função de clique)**
-- [ ] Scroll
+- [x] Scroll
 - [x] 1 arquivo só para estilos
 - [x] pelo menos 1 tabBar
 - [x] Navegação
 - [x] Tela de login
 - [x] Mínimo de 4 telas (Contando com a login)
+
+### Particulares do projeto
+
+- [ ] Adicionar alimentos mais populares
+- [ ] Desenvolver a página de produtos
+  - [ ] Descrição
+  - [ ] Preço
+  - [ ] Calorias
+  - [ ] Etc...
 
 ---
 
