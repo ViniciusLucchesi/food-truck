@@ -1,4 +1,5 @@
 import { StatusBar, SafeAreaView, View } from 'react-native';
+
 import Rotas from './src/routes/rotas.js';
 
 export default function App() {

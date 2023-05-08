@@ -1,27 +1,33 @@
 import React from 'react'
 import { Text, View, Image, TouchableOpacity } from 'react-native'
 
-import estilos from '../styles/estilos.js'
-import mascote from '../../assets/rust-mascot.png'
+import {welcome} from '../styles/estilos.js'
+import hotdog from '../../assets/hotdog.png';
+import { useNavigation } from '@react-navigation/native'
 
 export default function Welcome() {
+    const navigation = useNavigation();
+
     return (
-        <View style={estilos.container}>
-            <View style={estilos.container}>
-                <Image source={mascote} style={estilos.logo} />
-                <Text style={estilos.title}>
-                    Bem-vindo!
+        <View style={welcome.background}>
+            <Image source={hotdog} style={welcome.logo} />
+            <Text style={welcome.title}>
+                Comidas
+                <Text style={welcome.subtitle}>
+                    deliciosas.
                 </Text>
-                <Text>Sinta-se a vontade para nos dar um feedback</Text>
-                <Text>Bora lá?</Text>
-            </View>
-            <View style={estilos.footer}>
-                <TouchableOpacity style={estilos.botao} >
-                    <Text style={estilos.textoBotao}>
-                        Avançar
+            </Text>
+            
+            <Text style={welcome.text}>
+                Nos deixe ajudar a encontrar a melhor comida da semana.
+            </Text>
+            <TouchableOpacity style={welcome.button} onPress={()=>{
+                    navigation.navigate('Home')
+                }}>
+                    <Text style={welcome.textButton}>
+                        Iniciar
                     </Text>
                 </TouchableOpacity>
-            </View>
         </View>
     );
 }
