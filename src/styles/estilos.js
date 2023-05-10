@@ -155,44 +155,49 @@ export const home = StyleSheet.create({
         width: width,
         height: height,
     },
-    topContent: {
-        position: "relative",
-        width: "100%",
-        height: 150,
-        padding: 10,
-    },    
-    title: {
-        fontSize: 20,
-        fontWeight: 500,
-        marginBottom: 10,
-        color: "#000",  
+    top: {
+        topContent: {
+            position: "relative",
+            width: "100%",
+            height: 150,
+            padding: 10,
+        },    
+        title: {
+            fontSize: 20,
+            fontWeight: 500,
+            marginBottom: 10,
+            color: "#000",  
+        },
+        topCardContent: {
+            display: "flex",
+            flexDirection: "row",
+            position: "relative",
+            padding: 10,
+            width: "100%",
+            height: 100,
+            borderRadius: 15,
+            backgroundColor: "#C0A9E5",
+            justifyContent: "space-between",
+        },
+        subtitle: {
+            fontSize: 10,
+            color: "#fee",
+        },
+        topFoodTitle: {
+            fontSize: 15,
+            fontWeight: 500,
+            color: "#fff",
+        },
+        food: {
+            width: 105,
+            height: 80,
+            bottom: 15,
+            resizeMode: "cover",
+        },
     },
-    topCardContent: {
-        display: "flex",
-        flexDirection: "row",
-        position: "relative",
-        padding: 10,
-        width: "100%",
-        height: "100%",
-        borderRadius: 15,
-        backgroundColor: "#C0A9E5",
-        justifyContent: "space-between",
-    },
-    subtitle: {
-        fontSize: 10,
-        color: "#fee",
-    },
-    topFoodTitle: {
-        fontSize: 15,
-        fontWeight: 500,
-        color: "#fff",
-    },
-    food: {
-        width: 150,
-        height: "auto",
-        bottom: 15,
-        resizeMode: "cover",
-    },
+    bottom: {
+
+    }
 });
 
 export const utils = StyleSheet.create({
@@ -204,5 +209,10 @@ export const utils = StyleSheet.create({
         borderRadius: 10,
         justifyContent: "center",
         backgroundColor: "#918AE3",
+    },
+    center: {
+        display: "flex",
+        justifyContent: "center",
+        marginHorizontal: 15,
     },
 });
