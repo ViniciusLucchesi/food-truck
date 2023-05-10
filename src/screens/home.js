@@ -25,7 +25,11 @@ export default function Home() {
                     <TouchableOpacity>
                         <Ionicons name={"ios-menu-sharp"} size={30} color={"#918AE3"} />
                     </TouchableOpacity>
-                    <Image source={user} style={home.avatar} />
+                    <TouchableOpacity  onPress={()=>{
+                        navigation.navigate('Login')
+                    }}>
+                        <Image source={user} style={home.avatar} />
+                    </TouchableOpacity>
                 </View>
                 <View style={home.content}>
                     <View style={home.topContent}>
@@ -58,7 +62,7 @@ export default function Home() {
                                 <View style={home.card}>
                                     <Image source={pancake} style={home.cardFood} />
                                     <Text style={home.textCard}>
-                                        Panquequa
+                                        Panqueca
                                     </Text>
                                 </View>
                             </TouchableOpacity>

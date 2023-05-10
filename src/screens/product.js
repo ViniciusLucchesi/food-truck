@@ -24,7 +24,11 @@ export default function Product() {
                     <TouchableOpacity>
                         <Ionicons name={"ios-menu-sharp"} size={30} color={"#918AE3"} />
                     </TouchableOpacity>
-                    <Image source={user} style={home.avatar} />
+                    <TouchableOpacity  onPress={()=>{
+                        navigation.navigate('Login')
+                    }}>
+                        <Image source={user} style={home.avatar} />
+                    </TouchableOpacity>
                 </View>
                 <View style={home.content}>
                     <View style={product.search}>
