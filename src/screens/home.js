@@ -5,7 +5,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 import user from '../../assets/user.png';
 import pancake from '../../assets/pancake.png';
 
-import { home } from '../styles/estilos.js'
+import { home, utils } from '../styles/estilos.js'
 import { useNavigation } from '@react-navigation/native'
 
 
@@ -23,26 +23,31 @@ export default function Welcome() {
                     <Image source={user} style={home.avatar} />
                 </View>
                 <View style={home.content}>
-                    <View style={home.topContent}>
-                        <Text style={home.title}>
+                    <View style={home.top.topContent}>
+                        <Text style={home.top.title}>
                             Lanche destaque
                         </Text>
-                        <View style={home.topCardContent}>
-                            <View>
-                                <Text style={home.subtitle}>
+                        <View style={home.top.topCardContent}>
+                            <View style={utils.center}>
+                                <Text style={home.top.subtitle}>
                                     Descubra
                                 </Text>
                                 <View>
-                                    <Text style={home.topFoodTitle}>
+                                    <Text style={home.top.topFoodTitle}>
                                         Melhor comida
                                     </Text>
-                                    <Text style={home.topFoodTitle}>
+                                    <Text style={home.top.topFoodTitle}>
                                         Do dia!
                                     </Text>
                                 </View>
                             </View>
-                            <Image source={pancake} style={home.food} />
+                            <Image source={pancake} style={home.top.food} />
                         </View>
+                    </View>
+                    <View style={home.bottomContent}>
+                        <Text style={home.subtitle}>
+                            Mais populares
+                        </Text>
                     </View>
                 </View>
             </View>
