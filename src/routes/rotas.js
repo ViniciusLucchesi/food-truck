@@ -14,10 +14,10 @@ import Product from '../screens/product.js';
 const Tab = createBottomTabNavigator();
 
 export default function Rotas() {
-    const [currentRouteName, setCurrentRouteName] = React.useState('Login');
+    const [currentRouteName, setCurrentRouteName] = React.useState('Home');
 
     React.useEffect(() => {
-        setCurrentRouteName('Login');
+        setCurrentRouteName('Home');
     }, []);
 
     return (
