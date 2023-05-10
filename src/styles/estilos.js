@@ -155,49 +155,88 @@ export const home = StyleSheet.create({
         width: width,
         height: height,
     },
-    top: {
-        topContent: {
-            position: "relative",
-            width: "100%",
-            height: 150,
-            padding: 10,
-        },    
-        title: {
-            fontSize: 20,
-            fontWeight: 500,
-            marginBottom: 10,
-            color: "#000",  
-        },
-        topCardContent: {
-            display: "flex",
-            flexDirection: "row",
-            position: "relative",
-            padding: 10,
-            width: "100%",
-            height: 100,
-            borderRadius: 15,
-            backgroundColor: "#C0A9E5",
-            justifyContent: "space-between",
-        },
-        subtitle: {
-            fontSize: 10,
-            color: "#fee",
-        },
-        topFoodTitle: {
-            fontSize: 15,
-            fontWeight: 500,
-            color: "#fff",
-        },
-        food: {
-            width: 105,
-            height: 80,
-            bottom: 15,
-            resizeMode: "cover",
-        },
+    // Top
+    topContent: {
+        position: "relative",
+        width: "100%",
+        height: 150,
+        padding: 10,
+    },    
+    topTitle: {
+        fontSize: 20,
+        fontWeight: 500,
+        marginBottom: 10,
+        color: "gray",  
     },
-    bottom: {
-
-    }
+    topCardContent: {
+        display: "flex",
+        flexDirection: "row",
+        position: "relative",
+        padding: 10,
+        width: "100%",
+        height: 100,
+        borderRadius: 15,
+        backgroundColor: "#C3ABE8",
+        justifyContent: "space-between",
+    },
+    topSubtitle: {
+        fontSize: 10,
+        color: "#fee",
+    },
+    topFoodTitle: {
+        fontSize: 15,
+        fontWeight: 500,
+        color: "#fff",
+    },
+    topFood: {
+        width: 150,
+        height: 150,
+        bottom: 40,
+        resizeMode: "contain",
+    },
+    // Bottom
+    bottomContent: {
+        position: "relative",
+        width: "100%",
+        height: "100%",
+        padding: 10,
+    },
+    bottomSubtitle: {
+        fontSize: 10,
+        width: "auto",
+        color: "gray",
+    },
+    cardContainer: {
+        position: "relative",
+        display: "flex",
+        flexDirection: "row",
+        width: "100%",
+        height: 200,
+        marginTop: 15,
+        justifyContent: "space-evenly",
+    },
+    card: {
+        position: "relative",
+        display: "flex",
+        width: 150,
+        height: "100%",
+        backgroundColor: "#CDBDE5",
+        borderRadius: 10,
+        alignItems: "center",
+    },
+    cardFood: {
+        width: "90%",
+        height: "80%",
+        resizeMode: "contain",
+    },
+    textCard: {
+        color: "#fff",
+        fontSize: 15,
+        fontWeight: "bold",
+        marginTop: 5,
+        justifyContent: "center",
+        alignItems: "flex-end",
+    },
 });
 
 export const utils = StyleSheet.create({
