@@ -46,7 +46,7 @@ export default function Welcome() {
                                     </Text>
                                 </View>
                             </View>
-                            <Image source={pancake} style={home.topFood} />
+                            <Image source={hamburguer} style={home.topFood} />
                         </View>
                     </View>
                     <View style={home.bottomContent}>
