@@ -14,7 +14,7 @@ import { home, utils } from '../styles/estilos.js'
 import { useNavigation } from '@react-navigation/native'
 
 
-export default function Welcome() {
+export default function Home() {
     const navigation = useNavigation();
 
     return (

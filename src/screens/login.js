@@ -7,7 +7,7 @@ import { useNavigation } from '@react-navigation/native'
 import user from '../../assets/user.png';
 import { TextInput } from 'react-native-web';
 
-export default function Welcome() {
+export default function Login() {
     const navigation = useNavigation();
 
     return (
