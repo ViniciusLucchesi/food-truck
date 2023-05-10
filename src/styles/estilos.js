@@ -239,6 +239,107 @@ export const home = StyleSheet.create({
     },
 });
 
+export const product = StyleSheet.create({
+    search: {
+        display: "flex",
+        flexDirection: "row",
+        margin: 15,   
+        height: 35,     
+        borderRadius: 25,
+        borderWidth: 1,
+        borderColor: "gray",
+        borderStyle: "solid",
+        paddingLeft: 10,
+        justifyContent: "flex-start",
+        alignItems: "center",
+    },
+    textSearch: {
+        marginLeft: 5, 
+        color: "gray"
+    },
+    categoria: {
+        display: "flex",
+        flexDirection: "row",
+        width: 100,
+        height: 35,
+        borderRadius: 10,
+        borderWidth: 1,
+        borderColor: "gray",
+        borderStyle: "solid",
+        paddingLeft: 10,
+        justifyContent: "flex-start",
+        alignItems: "center",
+    },
+    categoriaAtiva: {
+        display: "flex",
+        flexDirection: "row",
+        width: 100,
+        height: 35,
+        borderRadius: 10,
+        borderWidth: 1,
+        borderColor: "#918AE3",
+        borderStyle: "solid",
+        backgroundColor: "#918AE3",
+        paddingLeft: 10,
+        justifyContent: "flex-start",
+        alignItems: "center",
+    },
+    textAtivo: {
+        color: "#fff",
+        marginLeft: 5,
+    },
+    menu: {
+        margin: 15,
+        height: "100%",
+    },
+    item: {        
+        position: "relative",
+        display: "flex",        
+        flexDirection: "row",
+        marginTop: 25,
+        width: "100%",
+        height: 100,
+        borderRadius: 10,     
+        backgroundColor: "#fff",
+        alignItems: "center",
+        justifyContent: "space-around",
+        shadowColor:"gray",
+        shadowOffset: {
+            width: 2,
+            height: 3,
+        },
+        shadowOpacity: 0.6,
+        shadowRadius: 8,
+        elevation: 10
+    },
+    foodImage: {
+        position: "relative",
+        width: 120,
+        height: 120,
+        resizeMode: "contain",
+    },
+    textContent: {
+        position: "relative",
+        width: 180,
+        height: "100%",
+    },
+    nomeComida: {
+        fontSize: 20,
+        fontWeight: 700,
+        marginTop: 5,
+        marginBottom: 5,
+    },
+    descricao: {
+        fontSize: 12,
+        color: "gray",
+        marginBottom: 5,
+    },
+    preco: {
+        color: "#99CDAA",
+        fontWeight: 500,
+    }
+});
+
 export const utils = StyleSheet.create({
     tabBar: {
         margin: 10,
@@ -254,4 +355,10 @@ export const utils = StyleSheet.create({
         justifyContent: "center",
         marginHorizontal: 15,
     },
+    spaceBetween: {
+        display: "flex",
+        flexDirection: "row",
+        justifyContent: "space-between",
+        marginHorizontal: 20,
+    }
 });
