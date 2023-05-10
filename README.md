@@ -25,19 +25,8 @@ Deve-se criar um app mobile, utilizando a tecnologia React Native, **DO ZERO**, 
 
 ### Particulares do projeto
 
-- [ ] Adicionar alimentos mais populares
-- [ ] Desenvolver a página de produtos
-  - [ ] Descrição
-  - [ ] Preço
-  - [ ] Calorias
-  - [ ] Etc...
-
----
-
-# LanchesApp
-
-Para o projeto avaliativo decidi desenvolver um app de comida que eu encontrei um template na internet. Estou tentando receiar esse App o mais fielmente possível, no entanto os alimentos representados de maneira 3D nas imagens de temaplate só podem ser obtidos de maneira paga então tive que arrumar alguns grates por aí.
-
-## Desenvolvimento
-
-Agora faltam apenas alguns detalhes para a filização dessa avaliação, a primeira e mais óbvia é que as telas **Home**  e **Products** estão somente com um texto, então ainda temos que programar elas e que a tela **Welcome** não está sendo exibida quando o botão **Entrar** na tela de Login é pressionado.
+- [x] Adicionar alimentos mais populares
+- [x] Desenvolver a página de produtos
+  - [x] Nome do produto
+  - [x] Descrição
+  - [x] Preço
