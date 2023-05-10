@@ -14,19 +14,8 @@ import Product from '../screens/product.js';
 const Tab = createBottomTabNavigator();
 
 export default function Rotas() {
-    const [currentRouteName, setCurrentRouteName] = React.useState('Home');
-
-    React.useEffect(() => {
-        setCurrentRouteName('Home');
-    }, []);
-
     return (
-        <NavigationContainer
-            onStateChange={(state) => {
-                const routeName = getFocusedRouteNameFromRoute(state) ?? 'Home';
-                setCurrentRouteName(routeName);
-            }}
-        >
+        <NavigationContainer>
             <Tab.Navigator
                 screenOptions={({ route }) => ({
                     tabBarIcon: ({ focused, color, size }) => {
@@ -36,6 +25,10 @@ export default function Rotas() {
                             iconName = focused ? 'ios-home' : 'ios-home-outline';
                         } else if (route.name === 'Product') {
                             iconName = focused ? 'ios-list' : 'ios-list-outline';
+                        } else if (route.name === 'Login') {
+                            iconName = focused ? 'log-out-outline' : 'log-out-outline';
+                        } else {
+                            iconName = focused ? 'megaphone-outline' : 'megaphone-outline';
                         }
                         return <Ionicons name={iconName} size={size} color={color} />;
                     },
@@ -44,22 +37,18 @@ export default function Rotas() {
                     tabBarInactiveTintColor: '#5D55B2',
                 })}
             >
-                {currentRouteName !== 'Home' && currentRouteName !== 'Product' && (
-                    <>
-                        <Tab.Screen
-                            name="Login"
-                            component={Login}
-                            options={{ tabBarStyle: { display: 'none' }, headerShown: false }}
-                        />
-                        <Tab.Screen
-                            name="Welcome"
-                            component={Welcome}
-                            options={{ tabBarStyle: { display: 'none' }, headerShown: false }}
-                        />
-                    </>
-                )}
                 <Tab.Screen name="Home" component={Home} options={{ headerShown: false }} />
                 <Tab.Screen name="Product" component={Product} options={{ headerShown: false }} />
+                <Tab.Screen
+                    name="Login"
+                    component={Login}
+                    options={{ tabBarStyle: { display: 'none' }, headerShown: false }}
+                />
+                <Tab.Screen
+                    name="Welcome"
+                    component={Welcome}
+                    options={{ tabBarStyle: { display: 'none' }, headerShown: false }}
+                />
             </Tab.Navigator>
         </NavigationContainer>
     );
