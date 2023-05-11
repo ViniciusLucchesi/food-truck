@@ -78,12 +78,12 @@ export default function Home() {
                         <View style={home.cardContainer}>
                             <TouchableOpacity>                            
                                 <View style={home.card}>
-                                    <Image source={hamburguer} style={home.cardFood} />
+                                    <Image source={hotdog} style={home.cardFood} />
                                     <Text style={home.textCard}>
-                                        Hamburguer
+                                        HotDog
                                     </Text>
                                 </View>
-                            </TouchableOpacity>
+                            </TouchableOpacity> 
                             <TouchableOpacity>                            
                                 <View style={home.card}>
                                     <Image source={potato} style={home.cardFood} />
@@ -96,12 +96,12 @@ export default function Home() {
                         <View style={home.cardContainer}>
                             <TouchableOpacity>                            
                                 <View style={home.card}>
-                                    <Image source={hotdog} style={home.cardFood} />
+                                    <Image source={hamburguer} style={home.cardFood} />
                                     <Text style={home.textCard}>
-                                        HotDog
+                                        Hamburguer
                                     </Text>
                                 </View>
-                            </TouchableOpacity>
+                            </TouchableOpacity>                            
                             <TouchableOpacity>                            
                                 <View style={home.card}>
                                     <Image source={coffee} style={home.cardFood} />
