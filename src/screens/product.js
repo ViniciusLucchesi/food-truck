@@ -111,7 +111,7 @@ export default function Product() {
                                         Cachorro Quente
                                     </Text>
                                     <Text style={product.descricao}>
-                                        A salcicha do geito que você gosta ;)
+                                        A salsicha do jeito que você gosta ;)
                                     </Text>
                                     <Text style={product.preco}>
                                     {
