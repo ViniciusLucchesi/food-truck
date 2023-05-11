@@ -37,8 +37,6 @@ export default function Rotas() {
                     tabBarInactiveTintColor: '#5D55B2',
                 })}
             >
-                <Tab.Screen name="Home" component={Home} options={{ headerShown: false }} />
-                <Tab.Screen name="Product" component={Product} options={{ headerShown: false }} />
                 <Tab.Screen
                     name="Login"
                     component={Login}
@@ -49,6 +47,8 @@ export default function Rotas() {
                     component={Welcome}
                     options={{ tabBarStyle: { display: 'none' }, headerShown: false }}
                 />
+                <Tab.Screen name="Home" component={Home} options={{ headerShown: false }} />
+                <Tab.Screen name="Product" component={Product} options={{ headerShown: false }} />
             </Tab.Navigator>
         </NavigationContainer>
     );
