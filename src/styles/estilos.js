@@ -54,6 +54,7 @@ export const welcome = StyleSheet.create({
         top: top + 130,
         marginLeft: margemLeft,
         color: "#BBB7F0",
+        fontFamily: "Verdana",
     },
 
 });
@@ -82,6 +83,7 @@ export const login = StyleSheet.create({
         top: 180,
         fontSize: 30,
         fontWeight: 500,
+        fontFamily: 'sans-serif',
         color: "#918AE3",
     },
     inputContainer: {
@@ -165,6 +167,7 @@ export const home = StyleSheet.create({
     topTitle: {
         fontSize: 20,
         fontWeight: 500,
+        fontFamily: "sans-serif",        
         marginBottom: 10,
         color: "gray",  
     },
@@ -180,7 +183,8 @@ export const home = StyleSheet.create({
         justifyContent: "space-between",
     },
     topSubtitle: {
-        fontSize: 10,
+        fontSize: 10,        
+        fontFamily: "Verdana",
         color: "#fee",
     },
     topFoodTitle: {
@@ -202,9 +206,10 @@ export const home = StyleSheet.create({
         padding: 10,
     },
     bottomSubtitle: {
-        fontSize: 10,
+        fontSize: 15,
+        fontFamily: "Verdana",
         width: "auto",
-        color: "gray",
+        color: "gray",        
     },
     cardContainer: {
         position: "relative",
