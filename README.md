@@ -6,8 +6,8 @@ Deve-se criar um app mobile, utilizando a tecnologia React Native, **DO ZERO**, 
 
 - ~~28/04 - 20:00 até o fim da aula~~
 - ~~05/05 - Aula Toda~~
-- 12/05 - 2 primeiras aulas
-- 12-05 - 2 últimas ("Apresentação")
+- ~~12/05 - 2 primeiras aulas~~
+- ~~12-05 - 2 últimas ("Apresentação")~~
 
 ### NECESSITA
 
